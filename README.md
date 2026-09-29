@@ -101,6 +101,8 @@ print("Sum =", sum)
 ```
 
 ## Sample Output
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6b489e53-da30-4c8f-8fe5-0d90ed92e132" />
+
 
 ```text
 Enter first number: 10
