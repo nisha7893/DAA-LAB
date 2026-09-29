@@ -101,14 +101,15 @@ print("Sum =", sum)
 ```
 
 ## Sample Output
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6b489e53-da30-4c8f-8fe5-0d90ed92e132" />
-
 
 ```text
 Enter first number: 10
 Enter second number: 20
 Sum = 30
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5bd74bc0-ddb4-4295-87d6-dc97accbae54" />
+
+
 
 [Back to Index](#index)
 
@@ -140,6 +141,8 @@ print("Largest number =", largest)
 ```
 
 ## Sample Output
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/76edd186-3641-4ca2-96e9-bf904450f876" />
+
 
 ```text
 Enter first number: 10
@@ -174,6 +177,10 @@ print("Factorial =", fact)
 ```
 
 ## Sample Output
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/935b32d6-b197-4885-bf3d-6b5d3fe71320" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/760e4edf-a007-4985-829a-86b0ba3c51d5" />
+
+
 
 ```text
 Enter a number: 5
