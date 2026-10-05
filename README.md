@@ -269,3 +269,42 @@ Example:
 class Student:
     def display(self):
         print("Hello")
+```
+[Back to Index](#index)
+
+---
+
+<div style="page-break-after: always;"></div>
+
+# Program 6: Bubble sort 
+
+## Aim
+
+To write a Python program to sort numbers from bubble sort.
+
+## Program
+
+```python
+import time
+
+start=time.time()
+
+def bubble_sort(arr):
+    n = len(arr)
+
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+    return arr
+
+
+print(bubble_sort([5, 2, 8, 1, 3]))
+end=time.time()
+print("execution time" , end-start)
+```
+
+## Sample Output
+
+
