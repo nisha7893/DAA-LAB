@@ -79,7 +79,7 @@ Lakshmangarh, Rajasthan
   <tr>
     <td>6</td>
     <td>bubble sort</td>
-    <td><a href="#program-6-bubble sort">Program 6</a></td>
+    <td><a href="#program-6-bubble-sort">Program 6</a></td>
   </tr>
 </table>
 
@@ -302,6 +302,11 @@ print("execution time" , end-start)
 
 ## Sample Output
 <img width="1548" height="446" alt="image" src="https://github.com/user-attachments/assets/efd4bc1a-f107-4b20-a3ec-5d911086bfc8" />
+[Back to Index](#index)
+
+---
+
+<div style="page-break-after: always;"></div>
 
 
 
