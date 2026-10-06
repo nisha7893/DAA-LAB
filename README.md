@@ -309,5 +309,46 @@ print("execution time" , end-start)
 
 <div style="page-break-after: always;"></div>
 
+# Program 7: selection sort 
+
+## Aim
+
+To write a Python program to sort numbers from selection sort.
+
+## Program
+
+```python
+import time
+
+start=time.time()
+
+arr = [5, 3, 8, 4, 2]
+
+for i in range(len(arr)):
+    min_index = i
+    for j in range(i + 1, len(arr)):
+        if arr[j] < arr[min_index]:
+            min_index = j
+
+    arr[i], arr[min_index] = arr[min_index], arr[i]
+
+print(arr)
+
+end=time.time()
+print("execution time" , end-start)
+
+```
+
+## Sample Output
+
+
+
+<img width="1702" height="546" alt="image" src="https://github.com/user-attachments/assets/50d12352-d9e4-43a8-ab4d-41d053a47b33" />
+---
+
+<div style="page-break-after: always;"></div>
+
+
+
 
 
