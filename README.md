@@ -81,6 +81,11 @@ Lakshmangarh, Rajasthan
     <td>bubble sort</td>
     <td><a href="#program-6-bubble-sort">Program 6</a></td>
   </tr>
+  <tr>
+    <td>7</td>
+    <td>selection sort</td>
+    <td><a href="#program-7-selection-sort">Program 7</a></td>
+  </tr>
 </table>
 
 
