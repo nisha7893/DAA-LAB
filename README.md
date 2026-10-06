@@ -301,6 +301,10 @@ print("execution time" , end-start)
 ```
 
 ## Sample Output
+```text
+Enter number of terms: 7
+0 1 1 2 3 5 8
+```
 <img width="1548" height="446" alt="image" src="https://github.com/user-attachments/assets/efd4bc1a-f107-4b20-a3ec-5d911086bfc8" />
 [Back to Index](#index)
 
