@@ -353,6 +353,48 @@ print("execution time" , end-start)
 
 <div style="page-break-after: always;"></div>
 
+# Program 7: insertion sort 
+
+## Aim
+
+To write a Python program to sort numbers from insertion sort.
+
+## Program
+
+```python
+import time
+
+start=time.time()
+
+arr = [5, 3, 8, 4, 2]
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] > key:
+        arr[j + 1] = arr[j]
+        j -= 1
+
+    arr[j + 1] = key
+
+print(arr)
+
+
+end=time.time()
+print("execution time" , end-start)
+```
+
+## Sample Output
+
+
+<img width="1683" height="1008" alt="image" src="https://github.com/user-attachments/assets/1fa325a6-9916-4e29-9b67-3d59cb22ca95" />
+
+
+
+<div style="page-break-after: always;"></div>
+
+
 
 
 
