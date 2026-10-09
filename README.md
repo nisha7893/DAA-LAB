@@ -94,12 +94,17 @@ Lakshmangarh, Rajasthan
   <tr>
     <td>9</td>
     <td> Number is positive,negative or zero</td>
-    <td><a href="#program-9-positive-negative-zero">Program 9</a></td>
+    <td><a href="#program-9-Number-is-positive,negative-or-zero">Program 9</a></td>
   </tr>
   <tr>
     <td>10</td>
     <td>Day of the week</td>
     <td><a href="#program-10-day-of-the-week">Program 10</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Simple Calculator</td>
+    <td><a href="#program-11-Simple-Calculator">Program 11</a></td>
   </tr>
 </table>
 
@@ -478,6 +483,62 @@ Enter a number (1-7): 3
 Wednesday
 ````
 <img width="1025" height="634" alt="image" src="https://github.com/user-attachments/assets/0e7372dc-903a-4d62-9442-c2d8b6e7d239" />
+
+
+---
+
+<div style="page-break-after: always;"></div>
+
+[Back to Index](#index)
+
+# Program 11: Simple Calculator
+
+## Aim
+To write a Python program to perform basic arithmetic operations such as addition, subtraction, multiplication, and division using conditional statements.
+
+
+## Program
+
+```python
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+op = int(input("Choose operation (1-4): "))
+
+if op == 1:
+    print("Sum =", a + b)
+elif op == 2:
+    print("Difference =", a - b)
+elif op == 3:
+    print("Product =", a * b)
+elif op == 4:
+    if b != 0:
+        print("Division =", a / b)
+    else:
+        print("Cannot divide by zero")
+else:
+    print("Invalid operation")
+
+```
+
+## Sample Output
+````text
+Enter first number: 10
+Enter second number: 5
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Choose operation (1-4): 1
+Sum = 15.0
+
+````
+<img width="834" height="612" alt="image" src="https://github.com/user-attachments/assets/4d1e88b9-a10e-4751-bcc1-43db71992bab" />
 
 
 ---
