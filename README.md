@@ -89,7 +89,12 @@ Lakshmangarh, Rajasthan
   <tr>
     <td>8</td>
     <td>insertion sort</td>
-    <td><a href="#program-7-insertion-sort">Program 7</a></td>
+    <td><a href="#program-7-insertion-sort">Program 8</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td> Number is positive,negative or zero</td>
+    <td><a href="#program-9-positive-negative-zero">Program 9</a></td>
   </tr>
 </table>
 
