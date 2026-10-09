@@ -399,6 +399,40 @@ print("execution time" , end-start)
 
 <div style="page-break-after: always;"></div>
 
+# Program 9: Number is positive,negative or zero
+
+## Aim
+
+To check whether a number is positive, negative, or zero
+
+## Program
+
+```python
+n = int(input("Enter a number: "))
+
+if n > 0:
+    print("Positive")
+elif n < 0:
+    print("Negative")
+else:
+    print("Zero")
+```
+```text
+Enter a number: 5
+Factorial = 120
+```
+
+## Sample Output
+
+<img width="766" height="545" alt="image" src="https://github.com/user-attachments/assets/4f21acea-455b-4c58-89c7-0b05823f5592" />
+
+[Back to Index](#index)
+
+---
+
+
+<div style="page-break-after: always;"></div>
+
 
 
 
