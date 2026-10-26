@@ -108,8 +108,13 @@ Lakshmangarh, Rajasthan
   </tr>
   <tr>
     <td>12</td>
-    <td>Undirected graph</td>
-    <td><a href="#program-12-Undirected-graph">Program 11</a></td>
+    <td>Undirected Graph</td>
+    <td><a href="#program-12-Undirected-Graph">Program 12</a></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Directed Graph</td>
+    <td><a href="#program-12-Directed-Graph">Program 13</a></td>
   </tr>
 </table>
 
@@ -615,6 +620,68 @@ graph.print_graph()
 <div style="page-break-after: always;"></div>
 
 [Back to Index](#index)
+
+# Program 13:Directed Graph
+
+## Aim
+To write a Python program to implement Directed Graph.
+
+
+## Program
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.neighbors = []
+
+
+class Graph:
+    def __init__(self):
+        self.nodes = []
+
+    def add_node(self, data):
+        node = Node(data)
+        self.nodes.append(node)
+        return node
+
+    def add_edge(self, node1, node2):
+        node1.neighbors.append(node2)
+
+    def print_graph(self):
+        for node in self.nodes:
+            print(node.data, "->", end=" ")
+            for neighbor in node.neighbors:
+                print(neighbor.data, end=" ")
+            print()
+
+
+graph = Graph()
+
+A = graph.add_node("A")
+B = graph.add_node("B")
+C = graph.add_node("C")
+D = graph.add_node("D")
+
+graph.add_edge(A, B)
+graph.add_edge(A, C)
+graph.add_edge(B, D)
+graph.add_edge(C, D)
+
+graph.print_graph()
+
+```
+
+## Sample Output
+
+<img width="145" height="107" alt="image" src="https://github.com/user-attachments/assets/8955e538-00cf-4141-a5ba-a68d962a6249" />
+
+---
+
+<div style="page-break-after: always;"></div>
+
+[Back to Index](#index)
+
 
 
 
