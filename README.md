@@ -106,6 +106,11 @@ Lakshmangarh, Rajasthan
     <td>Simple Calculator</td>
     <td><a href="#program-11-Simple-Calculator">Program 11</a></td>
   </tr>
+  <tr>
+    <td>12</td>
+    <td>Undirected graph</td>
+    <td><a href="#program-12-Undirected-graph">Program 11</a></td>
+  </tr>
 </table>
 
 
@@ -539,6 +544,70 @@ Sum = 15.0
 
 ````
 <img width="834" height="612" alt="image" src="https://github.com/user-attachments/assets/4d1e88b9-a10e-4751-bcc1-43db71992bab" />
+
+
+---
+
+<div style="page-break-after: always;"></div>
+
+[Back to Index](#index)
+
+# Program 12:Undirected Graph
+
+## Aim
+To write a Python program to implement Undirected Graph.
+
+
+## Program
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.neighbors = []
+
+
+class Graph:
+    def __init__(self):
+        self.nodes = []
+
+    def add_node(self, data):
+        node = Node(data)
+        self.nodes.append(node)
+        return node
+
+    def add_edge(self, node1, node2):
+        node1.neighbors.append(node2)
+        node2.neighbors.append(node1)
+
+    def print_graph(self):
+        for node in self.nodes:
+            print(node.data, "->", end=" ")
+            for neighbor in node.neighbors:
+                print(neighbor.data, end=" ")
+            print()
+
+
+graph = Graph()
+
+A = graph.add_node("A")
+B = graph.add_node("B")
+C = graph.add_node("C")
+D = graph.add_node("D")
+
+graph.add_edge(A, B)
+graph.add_edge(A, C)
+graph.add_edge(B, D)
+graph.add_edge(C, D)
+
+graph.print_graph()
+
+```
+
+## Sample Output
+
+<img width="162" height="111" alt="image" src="https://github.com/user-attachments/assets/aa34702e-5c2b-404b-97e9-f8b582260897" />
+
 
 
 ---
