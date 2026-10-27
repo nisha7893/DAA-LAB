@@ -131,6 +131,11 @@ Lakshmangarh, Rajasthan
     <td>DFS</td>
     <td><a href="#program-16-DFS">Program 16</a></td>
   </tr>
+   <tr>
+    <td>17</td>
+    <td>BFS</td>
+    <td><a href="#program-17-BFS">Program 17</a></td>
+  </tr>
 </table>
 
 
@@ -879,6 +884,74 @@ g.DFS(1)
 <div style="page-break-after: always;"></div>
 
 [Back to Index](#index)
+# Program 17: BFS 
+
+## Aim
+To write a Python program to implement BFS.
+
+
+## Program
+
+```python
+from collections import deque
+
+class Graph:
+    def __init__(self):
+        self.graph = {}
+
+    def add_edge(self, u, v):
+        if u not in self.graph:
+            self.graph[u] = []
+        if v not in self.graph:
+            self.graph[v] = []
+
+        self.graph[u].append(v)
+        self.graph[v].append(u)
+
+    def BFS(self, start):
+        visited = set()
+        queue = deque([start])
+
+        visited.add(start)
+
+        while queue:
+            node = queue.popleft()
+            print(node, end=" ")
+
+            for neighbor in self.graph[node]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+
+
+# Create graph
+g = Graph()
+
+g.add_edge(1, 2)
+g.add_edge(1, 3)
+g.add_edge(2, 4)
+g.add_edge(2, 5)
+g.add_edge(3, 6)
+
+print("BFS Traversal:")
+g.BFS(1)
+```
+
+## Sample Output
+
+<img width="637" height="152" alt="image" src="https://github.com/user-attachments/assets/ae8fa696-0aa1-41f6-8be2-d46a5339b839" />
+
+
+---
+
+<div style="page-break-after: always;"></div>
+
+[Back to Index](#index)
+
+```
+
+
+
 
 
 
