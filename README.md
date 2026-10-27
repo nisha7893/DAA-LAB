@@ -124,7 +124,7 @@ Lakshmangarh, Rajasthan
   <tr>
     <td>15</td>
     <td>Directed Weighted Graph</td>
-    <td><a href="#program-15-Directed-Weighted-Graph">Program 14</a></td>
+    <td><a href="#program-15-Directed-Weighted-Graph">Program 15</a></td>
   </tr>
 </table>
 
