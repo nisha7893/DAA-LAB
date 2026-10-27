@@ -136,6 +136,11 @@ Lakshmangarh, Rajasthan
     <td>BFS</td>
     <td><a href="#program-17-BFS">Program 17</a></td>
   </tr>
+  <tr>
+    <td>18</td>
+    <td>Dijkstra's algorithm</td>
+    <td><a href="#program-18-Dijkstra's-Algorithm">Program 17</a></td>
+  </tr>
 </table>
 
 
@@ -940,6 +945,95 @@ g.BFS(1)
 ## Sample Output
 
 <img width="637" height="152" alt="image" src="https://github.com/user-attachments/assets/ae8fa696-0aa1-41f6-8be2-d46a5339b839" />
+
+
+---
+
+<div style="page-break-after: always;"></div>
+
+[Back to Index](#index)
+
+
+# Program 18: Dijkstra's algorithm
+
+## Aim
+To write a Python program to implement Dijkstra's Algorithm.
+
+
+## Program
+
+```python
+class Graph:
+    def __init__(self):
+        self.nodes = set()
+        self.graph = {}
+
+    def add_node(self, node):
+        self.nodes.add(node)
+        self.graph[node] = {}
+
+    def add_edge(self, u, v, weight):
+        self.graph[u][v] = weight
+        self.graph[v][u] = weight
+
+    def dijkstra(self, source):
+        distance = {node: float('inf') for node in self.nodes}
+        distance[source] = 0
+        visited = set()
+
+        while len(visited) < len(self.nodes):
+            current = None
+            min_distance = float('inf')
+
+            for node in self.nodes:
+                if node not in visited and distance[node] < min_distance:
+                    min_distance = distance[node]
+                    current = node
+
+            if current is None:
+                break
+
+            visited.add(current)
+
+            for neighbor, weight in self.graph[current].items():
+                new_distance = distance[current] + weight
+
+                if new_distance < distance[neighbor]:
+                    distance[neighbor] = new_distance
+
+        return distance
+
+
+# Graph creation
+g = Graph()
+
+A = "A"
+B = "B"
+C = "C"
+D = "D"
+
+g.add_node(A)
+g.add_node(B)
+g.add_node(C)
+g.add_node(D)
+
+g.add_edge(A, B, 4)
+g.add_edge(A, C, 2)
+g.add_edge(C, B, 1)
+g.add_edge(B, D, 3)
+g.add_edge(C, D, 5)
+
+# Run Dijkstra
+distance = g.dijkstra(A)
+
+for node, dist in distance.items():
+    print(node, "=", dist)
+```
+
+## Sample Output
+
+<img width="1134" height="317" alt="image" src="https://github.com/user-attachments/assets/8cf77d9c-5977-40c7-ada3-657cf1753fcf" />
+
 
 
 ---
