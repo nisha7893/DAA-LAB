@@ -139,7 +139,7 @@ Lakshmangarh, Rajasthan
   <tr>
     <td>18</td>
     <td>Dijkstra's algorithm</td>
-    <td><a href="#program-18-Dijkstra's-algorithm">Program 18</a></td>
+    <td><a href="#program-18-Dijkstras-algorithm">Program 18</a></td>
   </tr>
 </table>
 
