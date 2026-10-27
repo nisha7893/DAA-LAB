@@ -817,6 +817,64 @@ graph.print_graph()
 
 [Back to Index](#index)
 
+# Program 16: DFS 
+
+## Aim
+To write a Python program to implement DFS.
+
+
+## Program
+
+```python
+class Graph:
+    def __init__(self):
+        self.graph = {}
+
+    def add_edge(self, u, v):
+        if u not in self.graph:
+            self.graph[u] = []
+        if v not in self.graph:
+            self.graph[v] = []
+
+        self.graph[u].append(v)
+        self.graph[v].append(u)
+
+    def DFS(self, start, visited=None):
+        if visited is None:
+            visited = set()
+
+        visited.add(start)
+        print(start, end=" ")
+
+        for neighbor in self.graph[start]:
+            if neighbor not in visited:
+                self.DFS(neighbor, visited)
+
+
+# Create graph
+g = Graph()
+
+g.add_edge(1, 2)
+g.add_edge(1, 3)
+g.add_edge(2, 4)
+g.add_edge(2, 5)
+g.add_edge(3, 6)
+
+print("DFS Traversal:")
+g.DFS(1)
+```
+
+## Sample Output
+
+<img width="945" height="280" alt="image" src="https://github.com/user-attachments/assets/90ba657d-c286-4dde-969b-b9d334a4c5f0" />
+
+
+---
+
+<div style="page-break-after: always;"></div>
+
+[Back to Index](#index)
+
 
 
 
